@@ -81,7 +81,7 @@ internal class RustMatrixClient internal constructor(
 
     private val slidingSync = client
         .slidingSync()
-        .homeserver("https://slidingsync.lab.element.dev")
+        .homeserver("https://sliding-sync.amorgan.xyz")
         .withCommonExtensions()
         // .coldCache("ElementX")
         .addView(slidingSyncView)
