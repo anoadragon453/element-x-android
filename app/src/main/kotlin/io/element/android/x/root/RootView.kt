@@ -55,7 +55,7 @@ fun RootView(
         }
 
         ShowkaseButton(
-            isVisible = state.isShowkaseButtonVisible,
+            isVisible = false,
             onCloseClicked = { eventSink(RootEvents.HideShowkaseButton) },
             onClick = { ContextCompat.startActivity(context, Showkase.getBrowserIntent(context), null) }
         )
