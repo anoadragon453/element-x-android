@@ -32,6 +32,9 @@ fun PermissionsView(
 ) {
     if (state.showDialog.not()) return
 
+    // Please stop reminding me about notifications while they don't work
+    return;
+
     when {
         state.permissionGranted -> {
             // Notification Granted, nothing to do
